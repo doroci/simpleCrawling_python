@@ -41,9 +41,9 @@ document에도 내용이며, 최소(버전)을 맞춰 줘야 설치가 가능하
 
 ## 크롤링 시나리오
 
-- ![메인화면](/crawling/image/main.png)
+- ![메인화면](/image/main.png)
 
-- ![path추출](/crawling/image/xpath.png)
+- ![path추출](/image/xpath.png)
  > https://doc.scrapy.org/en/latest/topics/selectors.html
  
  
@@ -55,4 +55,4 @@ scrapy crawl sportsNewsCrawl
 ```
 
 ## 결과
-![mongodb에 저장된 데이터](/crawling/image/data.png)
+![mongodb에 저장된 데이터](/image/data.png)
