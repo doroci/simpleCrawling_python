@@ -31,7 +31,6 @@ class SportsNews(scrapy.Spider):
         item['date'] = response.xpath('/html/head/meta[contains(@property, "og:regDate")]/@content').extract()[0][:8]
         item['contents'] = response.xpath('//*[@id="harmonyContainer"]/section/div[contains(@dmcf-ptype, "general")]/text()').extract()+\
                           response.xpath('//*[@id="harmonyContainer"]/section/p[contains(@dmcf-ptype, "general")]/text()').extract()
-
         # 5초마다 크롤링을 시도
         time.sleep(5)
 

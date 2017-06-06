@@ -39,8 +39,20 @@ document에도 내용이며, 최소(버전)을 맞춰 줘야 설치가 가능하
 - [인텔리J 플러그인](https://plugins.jetbrains.com/plugin/7141-mongo-plugin)
 
 
+## 크롤링 시나리오
+
+- ![메인화면](/crawling/image/main.png)
+
+- ![path추출](/crawling/image/xpath.png)
+ > https://doc.scrapy.org/en/latest/topics/selectors.html
+ 
+ 
+
+
 ## 실행
 ```
 scrapy crawl sportsNewsCrawl
 ```
 
+## 결과
+![mongodb에 저장된 데이터](/crawling/image/data.png)
