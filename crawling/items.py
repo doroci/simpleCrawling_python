@@ -14,7 +14,7 @@ class CrawlingItem(scrapy.Item):
 
     title = scrapy.Field()  # 제목
     contents = scrapy.Field()  # 기사 내용
-    source = scrapy.Field()  # 기사 제공(집단)처
+    source = scrapy.Field()  # 출처
     date = scrapy.Field()  # 날짜
 
 pass

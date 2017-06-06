@@ -1,4 +1,4 @@
-#스포츠 뉴스 정보 크롤링 하기
+# 스포츠 뉴스 정보 크롤링 하기
 
 ## 크롤링을 하기전에..
 크롤링의 정의 및 크롤링에 대한 규약을 인식하고 크롤링을 시작하는 것이 바람직하다.
@@ -40,12 +40,18 @@ document에도 내용이며, 최소(버전)을 맞춰 줘야 설치가 가능하
 
 
 ## 크롤링 시나리오
+```
+메인화면에서 해당 페이지 및 날짜를 조회하여 리스트의 각 URL정보를 크롤링을 하여 가져온다.
+그리고나서 가지고 온 URL을 통해 다시 크롤링을 시도하여 기사의 세부 정보(날짜, 출처, 제목, 기사내용)를 얻는다.
+기사의 세부 정보를 mongodb에 적재한다.
+```
+
 
 - ![메인화면](/image/main.png)
 
 - ![path추출](/image/xpath.png)
- > https://doc.scrapy.org/en/latest/topics/selectors.html
- 
+
+> `xpath사용정보` https://doc.scrapy.org/en/latest/topics/selectors.html
  
 
 
